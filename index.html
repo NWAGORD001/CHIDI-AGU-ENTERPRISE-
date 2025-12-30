@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHIDI AGU ENTERPRISE | Building Materials</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Tahoma,sans-serif}
+body{background:#f5f5f5;color:#222}
+
+/* HEADER */
+header{
+background:#111;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo{display:flex;gap:12px;align-items:center}
+.logo i{font-size:28px;color:#c9a23f}
+.logo h2{color:#fff;font-size:20px}
+nav a{
+color:#ddd;
+margin-left:20px;
+text-decoration:none;
+font-weight:500
+}
+nav a:hover{color:#c9a23f}
+
+/* HERO */
+.hero{
+height:80vh;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=60")
+center/cover;
+display:flex;
+align-items:center;
+padding:0 8%;
+color:#fff
+}
+.hero h1{font-size:46px;margin-bottom:15px}
+.hero p{max-width:600px;font-size:17px;color:#ddd}
+
+/* SECTIONS */
+section{padding:70px 8%}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:32px}
+
+/* PRODUCTS */
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px
+}
+.product{
+background:#fff;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.08)
+}
+.product img{
+width:100%;
+height:200px;
+object-fit:cover
+}
+.product div{padding:18px}
+.product h4{margin-bottom:8px}
+.price{font-weight:700;margin-bottom:12px}
+.order{
+display:inline-block;
+background:#25D366;
+color:#fff;
+padding:10px 16px;
+border-radius:30px;
+text-decoration:none;
+font-size:14px
+}
+
+/* TESTIMONIALS */
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px
+}
+.testimonial{
+background:#fff;
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 20px rgba(0,0,0,.08)
+}
+.testimonial i{color:#c9a23f;font-size:22px}
+.testimonial p{margin:15px 0;font-style:italic}
+.testimonial h4{color:#111}
+
+/* FORM */
+form{
+max-width:600px;
+margin:auto;
+background:#fff;
+padding:30px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,.08)
+}
+form input, form textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border-radius:8px;
+border:1px solid #ccc
+}
+form button{
+width:100%;
+padding:14px;
+border:none;
+background:#25D366;
+color:#fff;
+font-size:16px;
+border-radius:30px;
+cursor:pointer
+}
+
+/* CONTACT */
+.contact{
+background:#111;
+color:#fff;
+padding:50px;
+border-radius:12px;
+text-align:center
+}
+.contact i{color:#c9a23f}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:#fff;
+padding:14px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+color:#aaa
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<i class="fas fa-building"></i>
+<h2>CHIDI AGU ENTERPRISE</h2>
+</div>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#order">Order</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Reliable Building Materials<br>Across Nigeria</h1>
+<p>Quality plumbing, tiles, tanks and home finishing materials you can trust.</p>
+</div>
+</section>
+
+<section id="products">
+<div class="section-title"><h2>Our Products</h2></div>
+
+<div class="products">
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1581092334494-0e4eaf3fdcb9?auto=format&fit=crop&w=800&q=60">
+<div>
+<h4>Water Heater</h4>
+<div class="price">₦180,000</div>
+<a class="order" href="https://wa.me/2349044785578?text=I%20want%20to%20order%20Water%20Heater">Order</a>
+</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1617104551722-3b2a7b6c1c5c?auto=format&fit=crop&w=800&q=60">
+<div>
+<h4>Water Storage Tank</h4>
+<div class="price">₦95,000</div>
+<a class="order" href="https://wa.me/2349044785578?text=I%20want%20to%20order%20Water%20Tank">Order</a>
+</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?auto=format&fit=crop&w=800&q=60">
+<div>
+<h4>Floor Tiles</h4>
+<div class="price">₦18,000 / sqm</div>
+<a class="order" href="https://wa.me/2349044785578?text=I%20want%20to%20order%20Tiles">Order</a>
+</div>
+</div>
+
+<div class="product">
+<img loading="lazy" src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=60">
+<div>
+<h4>Plumbing Fittings</h4>
+<div class="price">Contact for price</div>
+<a class="order" href="https://wa.me/2349044785578?text=I%20want%20to%20order%20Plumbing%20Fittings">Order</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="testimonials">
+<div class="section-title"><h2>Customer Testimonials</h2></div>
+
+<div class="testimonials">
+<div class="testimonial">
+<i class="fas fa-quote-left"></i>
+<p>Very reliable supplier. Their tiles and plumbing materials are top quality.</p>
+<h4>— Mr. Ade, Lagos</h4>
+</div>
+
+<div class="testimonial">
+<i class="fas fa-quote-left"></i>
+<p>Fast delivery and honest pricing. Highly recommended.</p>
+<h4>— Mrs. Okeke, Onitsha</h4>
+</div>
+
+<div class="testimonial">
+<i class="fas fa-quote-left"></i>
+<p>Professional service. My water heater works perfectly.</p>
+<h4>— Engr. Musa, Abuja</h4>
+</div>
+</div>
+</section>
+
+<section id="order">
+<div class="section-title"><h2>Order via WhatsApp</h2></div>
+
+<form onsubmit="sendWhatsApp();return false;">
+<input id="name" placeholder="Your Name" required>
+<input id="location" placeholder="Your Location" required>
+<input id="product" placeholder="Product Needed" required>
+<input id="email" type="email" placeholder="Email Address">
+<textarea id="message" placeholder="Additional Message"></textarea>
+<button type="submit">Send Order to WhatsApp</button>
+</form>
+</section>
+
+<section id="contact">
+<div class="contact">
+<h2>Contact Us</h2>
+<p><i class="fas fa-phone"></i> 09044785578</p>
+<p><i class="fas fa-envelope"></i> chidiaguenterprise@gmail.com</p>
+</div>
+</section>
+
+<footer>© 2025 CHIDI AGU ENTERPRISE</footer>
+
+<a class="whatsapp" href="https://wa.me/2349044785578">WhatsApp Us</a>
+
+<script>
+function sendWhatsApp(){
+let msg =
+"Name: " + document.getElementById("name").value +
+"%0ALocation: " + document.getElementById("location").value +
+"%0AProduct: " + document.getElementById("product").value +
+"%0AEmail: " + document.getElementById("email").value +
+"%0AMessage: " + document.getElementById("message").value;
+
+window.open("https://wa.me/2349044785578?text=" + msg, "_blank");
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", ()=>{
+
+if(localStorage.heroTitle){
+document.querySelector(".hero h1").innerHTML = localStorage.heroTitle;
+}
+
+if(localStorage.heroText){
+document.querySelector(".hero p").innerText = localStorage.heroText;
+}
+
+if(localStorage.p1name){
+document.querySelectorAll(".product h4")[0].innerText = localStorage.p1name;
+}
+
+if(localStorage.p1price){
+document.querySelectorAll(".price")[0].innerText = localStorage.p1price;
+}
+
+});
+</script>
+
+</body>
+</html>
